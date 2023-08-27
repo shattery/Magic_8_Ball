@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function answer() {
+            let random = Math.floor(Math.random() * 19);
+            switch (random) {
+                case 0:
+                    document.getElementById("Magic").innerHTML = "Es ist sicher";
+                    break;
+
+                case 1:
+                    document.getElementById("Magic").innerHTML = "Antwort verschwommen, versuche es noch einmal ";
+                    break;
+
+                case 2:
+                    document.getElementById("Magic").innerHTML = "Verlassen Sie sich nicht darauf";
+                    break;
+
+                case 3:
+                    document.getElementById("Magic").innerHTML = "Es ist entschieden, so";
+                    break;
+
+                case 4:
+                    document.getElementById("Magic").innerHTML = "Frag später noch einmal ";
+                    break;
+
+                case 5:
+                    document.getElementById("Magic").innerHTML = "Meine Antwort ist nein ";
+                    break;
+
+                case 6:
+                    document.getElementById("Magic").innerHTML = "Ohne Zweifel";
+                    break;
+
+                case 7:
+                    document.getElementById("Magic").innerHTML = "Erzähl es dir jetzt besser nicht ";
+                    break;
+
+                case 8:
+                    document.getElementById("Magic").innerHTML = "Meine Quellen sagen nein";
+                    break;
+
+                case 9:
+                    document.getElementById("Magic").innerHTML = "ja auf jeden Fall";
+                    break;
+
+                case 10:
+                    document.getElementById("Magic").innerHTML = "Kann jetzt nicht vorhersagen ";
+                    break;
+
+                case 11:
+                    document.getElementById("Magic").innerHTML = "Darauf können Sie sich verlassen  ";
+                    break;
+
+                case 12:
+                    document.getElementById("Magic").innerHTML = "Konzentrieren Sie sich und fragen Sie noch einmal ";
+                    break;
+
+                case 13:
+                    document.getElementById("Magic").innerHTML = "So, wie ich es sehe, ja";
+                    break;
+
+                case 14:
+                    document.getElementById("Magic").innerHTML = "Ausblick gut";
+                    break;
+
+                case 15:
+                    document.getElementById("Magic").innerHTML = "Ja ";
+                    break;
+
+                case 16:
+                    document.getElementById("Magic").innerHTML = "Sehr zweifelhaft";
+                    break;
+
+                case 17:
+                    document.getElementById("Magic").innerHTML = "Die Zeichen deuten auf ja ";
+                    break;
+
+            }
+
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Magic 8 Ball</h1>
+
+
+    <div>
+        <p id="Magic"> </p>
+
+    </div>
+    <button onclick="answer()">fra­gen</button>
+    <h1><a href="erklärung.html">erklärung</a></h1>
+
+</body>
+
+</html>
